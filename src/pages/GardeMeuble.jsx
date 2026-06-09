@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import PageHero from '../components/PageHero.jsx'
 import Icon from '../components/Icon.jsx'
+import SEO from '../components/SEO.jsx'
 
 const TYPES = [
   { icon: 'warehouse', title: 'Stockage de meubles', desc: 'Espace dédié et propre pour vos meubles et objets de valeur.' },
@@ -25,6 +26,12 @@ export default function GardeMeuble() {
 
   return (
     <>
+      <SEO
+        title="Garde-Meuble Abidjan — Stockage Sécurisé"
+        description="Garde-meuble sécurisé à Abidjan. Stockage de meubles courte et longue durée, surveillance 24/7. Tarifs dégressifs à partir de 6 mois. GALERIE-ARTISAN.CI."
+        keywords="garde-meuble Abidjan, stockage meubles Abidjan, self-stockage Côte d'Ivoire, stockage sécurisé Abidjan, entrepôt meubles"
+        path="/garde-meuble"
+      />
       <PageHero
         breadcrumb={['Accueil', 'Garde-Meuble']}
         tag="Garde-Meuble"

@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react'
 import PageHero from '../components/PageHero.jsx'
 import Icon from '../components/Icon.jsx'
 import { FLYERS, PACK_SERIE, EVENEMENTS, SLOGANS } from '../data/flyers.js'
+import SEO from '../components/SEO.jsx'
 
 const CATEGORIES = [
   { id: 'all', label: 'Tous' },
@@ -62,6 +63,12 @@ export default function Ameublement() {
 
   return (
     <>
+      <SEO
+        title="Ameublement sur Mesure à Abidjan"
+        description="Vente, location et fabrication de meubles sur mesure à Abidjan. Canapés palette, salons, chambres, bureaux. Packs ameublement pour résidences. GALERIE-ARTISAN.CI."
+        keywords="ameublement Abidjan, meubles sur mesure Côte d'Ivoire, canapé palette, location meubles Abidjan, fabrication meuble artisanal"
+        path="/ameublement"
+      />
       <PageHero
         breadcrumb={['Accueil', 'Ameublement']}
         tag="Ameublement"

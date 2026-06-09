@@ -2,6 +2,7 @@ import { useState } from 'react'
 import PageHero from '../components/PageHero.jsx'
 import Icon from '../components/Icon.jsx'
 import { FLYERS, SLOGANS } from '../data/flyers.js'
+import SEO from '../components/SEO.jsx'
 
 const SERVICES = [
   { icon: 'truck', title: 'Déménagement local & national', desc: 'Emballage sécurisé de vos biens. Transport rapide et fiable. Chargement et déchargement professionnels.' },
@@ -28,6 +29,12 @@ export default function Demenagement() {
 
   return (
     <>
+      <SEO
+        title="Déménagement Abidjan et Côte d'Ivoire"
+        description="Service de déménagement professionnel à Abidjan et dans toute la Côte d'Ivoire. Emballage, transport, installation. Tarifs adaptés à votre budget. GALERIE-ARTISAN.CI."
+        keywords="déménagement Abidjan, déménagement Côte d'Ivoire, transport meubles Abidjan, installation appartement, déménagement professionnel"
+        path="/demenagement"
+      />
       <PageHero
         breadcrumb={['Accueil', 'Déménagement']}
         tag="Déménagement"

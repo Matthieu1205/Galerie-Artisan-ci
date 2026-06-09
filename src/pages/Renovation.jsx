@@ -2,6 +2,7 @@ import { useState } from 'react'
 import PageHero from '../components/PageHero.jsx'
 import Icon from '../components/Icon.jsx'
 import { FLYERS, PACK_DECORATION } from '../data/flyers.js'
+import SEO from '../components/SEO.jsx'
 
 const SERVICES = [
   { icon: 'building', title: 'Construction de maison', desc: 'Construction neuve clé en main, de la fondation à la finition.' },
@@ -32,6 +33,12 @@ export default function Renovation() {
 
   return (
     <>
+      <SEO
+        title="Rénovation et Construction à Abidjan"
+        description="Travaux de rénovation, construction neuve, décoration intérieure à Abidjan et en Côte d'Ivoire. Artisans qualifiés, devis gratuit. GALERIE-ARTISAN.CI."
+        keywords="rénovation Abidjan, construction maison Côte d'Ivoire, décoration intérieure Abidjan, travaux réhabilitation, peinture plomberie électricité Abidjan"
+        path="/renovation"
+      />
       <PageHero
         breadcrumb={['Accueil', 'Rénovation']}
         tag="Rénovation & Construction"

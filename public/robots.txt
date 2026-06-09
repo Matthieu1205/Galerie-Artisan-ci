@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Bloquer le backoffice
+Disallow: /admin/
+
+Sitemap: https://galerie-artisan.ci/sitemap.xml

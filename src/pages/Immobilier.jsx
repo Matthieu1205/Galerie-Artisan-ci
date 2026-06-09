@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import PageHero from '../components/PageHero.jsx'
 import Icon from '../components/Icon.jsx'
+import SEO from '../components/SEO.jsx'
 
 const BIENS = [
   { id: 1, titre: 'Villa moderne 5 pièces', type: 'Vente', categorie: 'Maison', prix: 85000000, ville: 'Abidjan', quartier: 'Cocody', surface: 280, statut: 'Disponible', chambres: 4 },
@@ -41,6 +42,12 @@ export default function Immobilier() {
 
   return (
     <>
+      <SEO
+        title="Immobilier — Vente, Location, Terrain à Abidjan"
+        description="Achetez ou louez votre bien immobilier à Abidjan et en Côte d'Ivoire. Villas, appartements, terrains à Cocody, Plateau, Marcory, Bingerville. GALERIE-ARTISAN.CI."
+        keywords="immobilier Abidjan, vente maison Abidjan, location appartement Abidjan, terrain Côte d'Ivoire, villa Cocody, appartement Plateau"
+        path="/immobilier"
+      />
       <PageHero
         breadcrumb={['Accueil', 'Immobilier']}
         tag="Immobilier"

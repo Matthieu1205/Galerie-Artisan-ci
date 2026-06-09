@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Icon from '../components/Icon.jsx'
+import SEO from '../components/SEO.jsx'
 import { FLYERS, ATELIER_METIERS, ZONES, PROMESSE, PACKS_RESIDENCE } from '../data/flyers.js'
 
 const SERVICES = [
@@ -53,6 +54,12 @@ const PROCESS = [
 export default function Accueil() {
   return (
     <>
+      <SEO
+        title="Immobilier, Rénovation, Déménagement à Abidjan"
+        description="GALERIE-ARTISAN.CI — Solution complète pour vos projets immobiliers et d'aménagement à Abidjan. Immobilier, rénovation, déménagement, garde-meuble, ameublement sur mesure. Devis gratuit."
+        keywords="immobilier Abidjan, rénovation Abidjan, déménagement Abidjan, garde-meuble Abidjan, ameublement sur mesure, construction Côte d'Ivoire, artisan Abidjan"
+        path="/"
+      />
       {/* Hero */}
       <section className="hero">
         <div className="container hero-inner">

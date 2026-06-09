@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import PageHero from '../components/PageHero.jsx'
 import Icon from '../components/Icon.jsx'
+import SEO from '../components/SEO.jsx'
 
 export default function Contact() {
   const [sent, setSent] = useState(false)
@@ -13,6 +14,12 @@ export default function Contact() {
 
   return (
     <>
+      <SEO
+        title="Contact — Devis Gratuit"
+        description="Contactez GALERIE-ARTISAN.CI pour un devis gratuit. Immobilier, rénovation, déménagement, garde-meuble, ameublement à Abidjan. Réponse rapide garantie."
+        keywords="contact GALERIE-ARTISAN.CI, devis immobilier Abidjan, devis rénovation Abidjan, contact déménagement Côte d'Ivoire"
+        path="/contact"
+      />
       <PageHero
         breadcrumb={['Accueil', 'Contact']}
         tag="Contact"

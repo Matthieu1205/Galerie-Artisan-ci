@@ -2,10 +2,17 @@ import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero.jsx'
 import Icon from '../components/Icon.jsx'
 import { FLYERS, PACKS_RESIDENCE, PACK_SERIE, PARTENAIRE } from '../data/flyers.js'
+import SEO from '../components/SEO.jsx'
 
 export default function PacksPromoteurs() {
   return (
     <>
+      <SEO
+        title="Packs Promoteurs — Solutions Résidence Clé en Main"
+        description="Packs résidence clé en main pour promoteurs immobiliers en Côte d'Ivoire. Équipement complet de villas, appartements et immeubles. GALERIE-ARTISAN.CI."
+        keywords="packs promoteurs immobilier Côte d'Ivoire, résidence clé en main Abidjan, équipement immeuble, ameublement résidence promoteur"
+        path="/packs-promoteurs"
+      />
       <PageHero
         breadcrumb={['Accueil', 'Packs Promoteurs']}
         tag="Solution Promoteurs"
